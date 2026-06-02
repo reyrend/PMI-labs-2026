@@ -3,7 +3,7 @@
 #include <initializer_list>
 template<typename T>
 class Vector {
-private:
+protected:
     T* a;
     int n;
 public:
@@ -47,6 +47,7 @@ public:
     // деструктор
     ~Vector() {
         delete[] a;
+        a = nullptr;
     }
 
     // доступ по индексу

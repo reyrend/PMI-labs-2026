@@ -16,7 +16,7 @@ public:
 		}
 		Vector<T> c(num);
 		int n = this->size();
-		Matrix<T> b(this->a);
+		Matrix<T> b (*this);
 		
 		//go forward, step type
 		for (int i = 0;i < n; i++) {
